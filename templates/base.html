@@ -1,0 +1,17 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}" defer></script>
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/main.scss' %}">
+    {% endcompress %}
+</head>
+<body>
+<h1>Hello, World!</h1>
+</body>
+</html>
