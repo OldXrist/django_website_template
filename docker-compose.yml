@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - static_volume:/app/staticfiles
+    environment:
+      - DJANGO_SETTINGS_MODULE=xristnet_django.settings
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+
+volumes:
+  static_volume:
