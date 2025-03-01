@@ -56,7 +56,10 @@ dependencies = [
     "virtualenv (==20.29.2)",
     "zipp (==3.21.0)",
     "zstandard (==0.23.0)",
-    "cleo (==2.1.0)"
+    "cleo (==2.1.0)",
+    "django-compressor (>=4.5.1,<5.0.0)",
+    "libsass (>=0.23.0,<0.24.0)",
+    "django-sass-processor (>=1.4.1,<2.0.0)",
 ]
 
 
