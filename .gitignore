@@ -171,4 +171,4 @@ cython_debug/
 .pypirc
 
 # Production cache
-staticfiles
+staticfiles/
