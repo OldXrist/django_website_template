@@ -24,7 +24,7 @@ WORKDIR /app
 
 # Copy Poetry files and install dependencies
 COPY pyproject.toml poetry.lock* ./
-RUN poetry install --no-dev  # Install runtime dependencies only
+RUN poetry install --no-interaction --no-ansi --no-root  # Install runtime dependencies only
 
 # Copy project files
 COPY . .
