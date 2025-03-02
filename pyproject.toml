@@ -1,7 +1,7 @@
 [project]
-name = "xristnet-django"
+name = "django-website-template"
 version = "0.1.0"
-description = "XristNet django website"
+description = "django_website_template"
 authors = [
     {name = "Igor",email = "104066443+OldXrist@users.noreply.github.com"}
 ]

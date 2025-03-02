@@ -9,7 +9,7 @@ services:
       - .:/app
       - static_volume:/app/staticfiles
     environment:
-      - DJANGO_SETTINGS_MODULE=xristnet_django.settings
+      - DJANGO_SETTINGS_MODULE=django_website_template.settings
     ports:
       - "8000:8000"
     command: >
