@@ -455,6 +455,22 @@ rcssmin = "1.1.2"
 rjsmin = "1.2.2"
 
 [[package]]
+name = "django-libsass"
+version = "0.9"
+description = "A django-compressor filter to compile SASS files using libsass"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django-libsass-0.9.tar.gz", hash = "sha256:bfbbb55a8950bb40fa04dd416605f92da34ad1f303b10a41abc3232386ec27b5"},
+    {file = "django_libsass-0.9-py3-none-any.whl", hash = "sha256:5234d29100889cac79e36a0f44207ec6d275adfd2da1acb6a94b55c89fe2bd97"},
+]
+
+[package.dependencies]
+django-compressor = ">=1.3"
+libsass = ">=0.7.0,<1"
+
+[[package]]
 name = "django-sass-processor"
 version = "1.4.1"
 description = "SASS processor to compile SCSS files into *.css, while rendering, or offline."
@@ -1540,4 +1556,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4.0"
-content-hash = "ad92ebdf198961ff3418ea9a38c347691b532c8e04225c64f0acbb182b7d3db2"
+content-hash = "3634f5b3318d2f82b93e53780abd75af8d8485a374434a7b7cd4accce4575517"
