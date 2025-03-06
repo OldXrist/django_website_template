@@ -25,7 +25,12 @@ Then install project dependencies:
 poetry install
 ```
 
-### 3. Run the Development Server
+### 3. Apply Migrations
+```bash
+python manage.py migrate
+```
+
+### 4. Run the Development Server
 ```bash
 python manage.py runserver
 ```
