@@ -50,6 +50,24 @@ This will:
 docker-compose down
 ```
 
+## Deployment
+### 1. Install certbot
+```bash
+sudo apt update && sudo apt install certbot python3-certbot-nginx -y
+```
+
+### 2. Issue certs with letsencrypt
+```bash
+sudo certbot certonly --standalone -d yourdomain.com
+```
+
+### 3. Edit nginx.conf 
+
+### 4. Run docker-compose in you project directory
+```bash
+docker compose up --build -d
+```
+
 ## SCSS Support
 - SCSS files should be placed in `static/scss/`
 - They will be processed by `libsass` and `django-compressor`
