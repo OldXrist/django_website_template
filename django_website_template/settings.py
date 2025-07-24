@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "django_website_template.wsgi.application"
+WSGI_APPLICATION = "django-website-template.wsgi.application"
 
 
 # Database
