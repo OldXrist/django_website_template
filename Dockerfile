@@ -24,6 +24,7 @@ WORKDIR /app
 
 # Copy Poetry files and install dependencies
 COPY pyproject.toml poetry.lock* ./
+RUN poetry add gunicorn
 RUN poetry install --no-interaction --no-ansi --no-root  # Install runtime dependencies only
 
 # Copy project files
