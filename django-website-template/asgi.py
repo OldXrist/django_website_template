@@ -1,5 +1,5 @@
 """
-ASGI config for django_website_template project.
+ASGI config for django-website-template project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

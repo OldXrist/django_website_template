@@ -1,5 +1,5 @@
 """
-WSGI config for django_website_template project.
+WSGI config for django-website-template project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
